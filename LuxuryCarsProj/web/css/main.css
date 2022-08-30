@@ -1,0 +1,122 @@
+root
+{ 
+    display: block;
+}
+#menu
+{
+    width: 80%;
+}
+#warp
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: 800px;
+    border-style:ridge;
+    border-width:5px;
+    border-color: #38200c;
+}
+#menuBar
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: 80px;
+}
+.logo
+{
+    float: none;
+    margin-left: 3px;
+}
+
+.menuItems
+{
+    margin-top: 20px;
+    float: none;
+    margin-left: 3px;
+    height: 70px;
+}
+.menuLogin
+{
+    margin-top: 20px;
+    float: left;
+    margin-left: 3px;
+    height: 70px;
+}
+#but
+{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #527dbd;
+    width: 65px;
+    height: 18px;
+    color: #050505;
+    opacity:0.8;
+    border: 3px solid #38200c;
+}
+#but:hover
+{
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #527dbd;
+    width: 65px;
+    opacity:1;
+    height: 18px;
+    color: #050505;
+    border: 3px solid #38200c;
+}
+#loginInput
+{
+    border-style:ridge;
+    border-width:3px;
+    border-color: #38200c;
+    margin-right: 25px;
+    width: 175px;
+    background: url(../img/username.png) no-repeat right;
+    padding-right:25px;
+}
+#passInput
+{
+    border-style:ridge;
+    border-width:3px;
+    border-color: #38200c;
+    margin-right: 25px;
+    background: url(../img/password.png) no-repeat right;
+    padding-right:25px;
+    width: 100px;
+}
+#sumbitLogin
+{
+    border-style:ridge;
+    border-width:3px;
+    border-color: darkgreen;
+    width: 71px;
+    background-color: whitesmoke;
+}
+.text1
+{
+    font-family: sans-serif;
+    color: #527dbd;
+    font-weight: bold;
+}
+a { text-decoration:none; }
+h2
+{
+    color:#527dbd;
+    font-family: serif;
+    font-weight: 550;
+}

@@ -1,0 +1,328 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/12/2014, 12:38:46
+    Author     : miki
+*/
+body{
+    font: normal 100% Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #000;
+}
+
+.menubar
+{ 
+    background-color: white;
+    width: 960px;
+    height: 45px;
+    margin-top: 50px;  
+    border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -webkit-border: 15px 15px 0px 0px;
+} 
+
+.form
+{ 
+    background-color: white;
+    width: 960px;
+    height: 660px;
+    margin-top: 50px;  
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border: 15px 15px 15px 15px;
+}
+
+.form1
+{
+    background-color: white;
+    width: 960px;
+    height: 600px;
+    margin-top: 50px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border: 15px 15px 15px 15px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus
+{
+  background-color: #1abc9c;
+  color: #f2f2f2;
+}
+
+.menuText
+{
+  font-weight: bold;
+  font-size: 130%;
+  text-align: center;
+  margin: 0 auto;
+  background: transparent;
+  text-decoration: none;
+  color: #1abc9c
+}
+
+.menuText:hover{color: #1abc9c; opacity: 0.3; text-decoration: none;}
+.menuText a:link{color: #1abc9c; text-decoration: none;}
+.menuText a:visited{color: #1abc9c; text-decoration: none;}
+.menuText a:active{color: #1abc9c; text-decoration: none;}
+.menuText a:hover{color: #1abc9c; text-decoration: none;}
+
+
+.Line
+{
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  background: transparent;
+  text-decoration: none;
+  color: #1abc9c
+}
+
+
+.phone
+{
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+    height: 45px;
+    margin: 0 auto;
+    background: transparent;
+    color: #1abc9c;
+}
+
+.current
+{
+  font-weight: bold;
+  font-size: 130%;
+  text-align: center;
+  margin: 0 auto;
+  background: transparent;
+  text-decoration: none;
+  color: #1abc9c
+}
+
+.current a:link{color: #1abc9c; text-decoration: none;}
+.current a:visited{color: #1abc9c; text-decoration: none;}
+.current a:active{color: #1abc9c; text-decoration: none;}
+.current a:hover{color: #1abc9c; text-decoration: none;}
+
+.formText
+{
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.DjsText2
+{
+    text-align: left;
+    font-size: 90%;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.formBg
+{
+    background-color: #1abc9c;
+    height: 35px;
+    width: 350px;
+    vertical-align: top;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+    
+}
+
+
+.Phonenum
+{
+    background-color: white;
+    height: 35px;
+    width: 100px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.Phonenum1
+{
+    background-color: white;
+    height: 35px;
+    width: 135px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.email
+{
+    background-color: white;
+    height: 35px;
+    width: 135px;
+    vertical-align: middle;
+    font-weight: bolder;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.email2
+{
+    background-color: white;
+    height: 35px;
+    width: 200px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+.City
+{
+    background-color: white;
+    height: 35px;
+    width: 245px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+    
+}
+
+.password
+{
+    background-color: white;
+    height: 35px;
+    width: 300px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.password1
+{
+    background-color: white;
+    height: 35px;
+    width: 270px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+input[type=reset]
+{
+    background-color: #1abc9c;
+    height: 35px;
+    width: 250px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+}
+
+input[type=submit]
+{
+    background-color: #1abc9c;
+    height: 35px;
+    width: 250px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.tipsy { padding: 5px; font-size: 10px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(images/tipsy.gif); }
+  .tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 120px; text-align: center; }
+  .tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
+  .tipsy-west { background-position: left center; }
+
+
+.question
+{
+  font-weight: bold;
+  text-align: left;
+  margin: 0 auto;
+  
+  background: transparent;
+  text-decoration: none;
+  color: #1abc9c
+}
+
+.question a:link{color: #1abc9c; text-decoration: none;}
+.question a:visited{color: #1abc9c; text-decoration: none;}
+.question a:active{color: #1abc9c; text-decoration: none;}
+.question a:hover{color: #1abc9c; text-decoration: none;}
+
+
+.subMenu
+{
+    font-size: 165%;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: underline;
+    color: #1abc9c;
+}
+
+.subText
+{
+    font-size: 140%;
+    font-weight: bold;
+    text-align:left;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.DjsText
+{
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    background: transparent;
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.DjsPic
+{
+    
+}
+
+.DjsPic:hover{color: #1abc9c; opacity: 0.6; text-decoration: none;}
+.DjsPic a:link{color: #1abc9c; text-decoration: none;}
+.DjsPic a:visited{color: #1abc9c; text-decoration: none;}
+.DjsPic a:active{color: #1abc9c; text-decoration: none;}
+.DjsPic a:hover{color: #1abc9c; text-decoration: none;}

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+   
+     <script type="text/javascript">
+
+            function isEmpty(str)
+            {
+                if (str.length === 0)
+                    return true;
+                return false;
+            }
+
+            function checkForm()
+            {
+                if (isEmpty(document.tofes.username.value))
+                {
+                    window.alert("You must enter a username!");
+                    document.tofes.username.focus();
+                    document.tofes.username.select();
+                    return false;
+                }
+                return true;
+
+            }
+            function goBack() 
+            {
+                window.history.back();
+            }
+        </script>
+         </head>
+    <body>
+      <body bgcolor="black">
+        <font face="algerian" color="white" size="10">
+        Luxury Edition
+        </font>
+        <font face="algerian" color="white" size="4">
+        <i>The World's Lucrative Marketplace</i> 
+        </font>
+        <%
+            if (session.getAttribute("SignedIn") != null) {
+        %>
+         <div style="float: right">
+            <font color="white">You are logged in as a <% out.print(session.getAttribute("SignedIn"));%></font>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href ="logout.jsp"><font color="white">Log Out</font></a>
+        </div>
+        <% 
+            } 
+        %>
+        <hr color="white">
+        <table border="4" cellpadding="10" style="margin-top:0px; margin-left:275px; border-color:white;">
+            <tr>
+                <td>
+                    <font face="garamond" color="white" size="5">
+                      <u><a href='NewCarsEx.jsp'><font color="#FFFFFF">Top 10 cars</font></a></u>
+                    </font>
+                </td>
+                <td>
+                    <font face="garamond" color="white" size="5">
+                    <u><a href='Forums.jsp'><font color="#FFFFFF">Forums</font></a></u>
+                    </font>
+                </td>
+                <td>
+                    <font face="garamond" color="white" size="5">
+                    <u><a href='AboutSite.jsp'><font color="#FFFFFF">About</font></a></u>
+                    </font>
+                </td>
+                <td>
+                    <font face="garamond" color="white" size="5">
+                    <a href=http://localhost:8080/LuxuryCarsProj/index.jsp><font color="#FFFFFF">Main Menu</font></a>
+                    </font>
+                </td>
+                <td>
+                    <font face="garamond" color="white" size="5">
+                    <a href="http://localhost:8080/LuxuryCarsProj/NewGallery.jsp"><font color="#FFFFFF">Gallery</font></a>
+                    </font>
+                </td>
+                <td>
+                    <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Search LuxuryEdition"/>
+                    <input type="submit" value="Search"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+      <center><table bgcolor="white" cellpadding="10" border="1">
+            <tr>
+                <td>
+                    <form name="tofes" method="get" onsubmit="return checkForm()" action="UpdateDeleteUser.jsp">
+                        <font face="arial" color="black" size="3">
+                        <u>Account Name:</u>
+                        </font><br>
+                        <input type="text" name="first">
+                        <br>
+                        <input type="submit" value="send" />
+                    </form>
+                </td>
+            </tr>
+          </table></center>
+      <center><font size="7" color="white"><u><button onclick="goBack()">Administrator Menu</button></u></font></center>
+    </body>
+</html>
