@@ -5,7 +5,7 @@ Michael Basov - 315223156
 Shlomo Gulayev - 318757382
 Micha Briskman - 208674713
 
-Summery:
+Summary:
 For the final project of the semester we built a game called 'Bubble Trouble'.
 In the game, the player controls a chrarcter using the arrow (left, right) keys,
 the character has to destroy the bouncing balls on each level using their weapon (press 'space' to shoot)
