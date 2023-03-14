@@ -1,0 +1,38 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/forms.css">
+<style>
+</style>
+</head>
+
+<body>
+  <div class="text-center">
+    <img src="/assets/nasa.jpg" alt="nasa" width="250" height="250" class="img">
+  </div>
+  <div>
+    <h3 class="text-center">
+      Please sign in
+    </h3>
+    <p class="text-center">
+      Exercise 6 (part 1: registration)
+    </p>
+  </div>
+  <div id="errors" class="text-center">
+    <% if(error.hasError) { %>
+    <p class="text-danger"> <%=error.error%></p>
+    <% } %>
+  </div>
+  <form class="form-control" action="/" method="POST">
+    <div class="user-form">
+      <input class="input" type="email" id="email" size="30" required placeholder="Email address" name="email">
+      <input class="input" type="password" id="pass" required placeholder="Password" name="password">
+      <button class="btn btn-primary btn-block" type="submit" id="submitLogin">Sign in</button>
+    </div>
+  </form>
+  <br>
+  <p class="text-center">
+    &copy;MB &copy;SG
+  </p>
+  <p class="text-center">
+    need to <a href="/users/register">Register</a>?
+  </p>
+<%- include('includes/end.ejs') %>

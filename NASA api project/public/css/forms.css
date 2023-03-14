@@ -1,0 +1,56 @@
+.form-control {
+    width: 40rem;
+    max-width: 90%;
+    margin: auto;
+    background-color: papayawhip;
+    border-radius:10px;
+}
+
+.form-control label,
+
+.form-control input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+
+.form-control input:focus {
+    outline-color: #00695c;
+}
+
+.user-form {
+    width: 40rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.input {
+    padding:10px;
+    border-radius:10px;
+}
+.btn-block {
+    width: 40rem;
+    max-width: 100%;
+    margin: auto;
+}
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+}
+.card h3 {
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 1rem;
+}
+.img {
+    border-radius: 50%;
+}
+/*.box {*/
+/*    !*background-color: lightgrey;*!*/
+/*    width: 300px;*/
+/*    border: 3px solid black;*/
+/*    padding: 5px;*/
+/*    margin: 5px;*/
+/*}*/

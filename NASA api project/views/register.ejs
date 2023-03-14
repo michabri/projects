@@ -1,0 +1,44 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+<div class="text-center">
+    <img src="/assets/nasa.jpg" alt="nasa" width="250" height="250" class="img">
+</div>
+<div>
+    <h3 class="text-center">
+        Please Register
+    </h3>
+</div>
+<div id="errors" class="text-center">
+    <% if(error.hasError) { %>
+        <p class="text-danger"> <%=error.error%></p>
+    <% } %>
+</div>
+<form class="form-control" action="/users/register" method="POST">
+    <div class="user-form">
+        <input class="input" type="email" id="email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" size="30" required placeholder="Email address"
+        <%if(data.hasData) {%>
+            value="<%= data.data.email %>"
+        <%}%> >
+        <input class="input" type="text" id="first_name" name="first_name"  required placeholder="First Name" pattern="[a-zA-z]+" maxlength="32" minlength="3"
+        <%if(data.hasData) { %>
+            value="<%= data.data.first_name %>"
+        <% } %> >
+        <input class="input" type="text" id="last_name" name="last_name"  required placeholder="Last Name" pattern="[a-zA-z]+" maxlength="32" minlength="3"
+        <%if(data.hasData) {%>
+            value="<%= data.data.last_name %>"
+        <% } %> >
+        <button class="btn btn-primary btn-block" id="next-button" type="submit">Next</button>
+    </div>
+</form>
+<br>
+<p class="text-center">
+    &copy;MB &copy;SG
+</p>
+<p class="text-center">
+    already registered? go to <a href="/">login</a> page
+</p>
+
+<%- include('includes/end.ejs') %>
